@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% csrf_token %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <div>
+        <l><p>Название: {{items.name}}</p>
+        <p>Описание: {{items.description}}</p>
+        <p>Цена: {{items.price}}</p>
+<body>
+<html>
+  <h1>
+    <title>Buy cool new product</title>
+  </h1>
+  <a>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="create-checkout-session/" method="POST">
+      <button type="submit">Buy</button>
+
+    </form>
+  </a>
+</html>
+        </l>
+
+</div>
+</head>
+<body>
+
+</body>
+</html>

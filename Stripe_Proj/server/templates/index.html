@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% csrf_token %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% for i in items %}
+    <div>
+        <l><p>Название: {{i.name}}</p>
+        <p>Цена: {{i.price}}</p>
+        </l>
+        <button onclick="window.location.href = 'buy/{{i.id}}/';">More</button>
+
+        {% csrf_token %}
+    {% endfor %}
+</div>
+</head>
+
+
+
+</body>
+</html>
